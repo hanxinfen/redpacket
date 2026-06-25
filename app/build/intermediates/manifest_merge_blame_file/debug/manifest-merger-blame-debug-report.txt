@@ -1,0 +1,164 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.redpacket.autograb"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+11-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:5:5-93
+11-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:5:22-90
+12    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+12-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:6:5-85
+12-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:6:22-82
+13    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+13-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:7:5-78
+13-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:7:22-75
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+14-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:8:5-77
+14-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:8:22-74
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:9:5-81
+15-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:10:5-68
+16-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:10:22-65
+17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+17-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:11:5-77
+17-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:11:22-74
+18
+19    <application
+19-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:13:5-69:19
+20        android:allowBackup="true"
+20-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:14:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.7.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/8d0e82b2299de0f0155cea142053b042/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:hardwareAccelerated="true"
+23-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:19:9-43
+24        android:icon="@mipmap/ic_launcher"
+24-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:15:9-43
+25        android:label="@string/app_name"
+25-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:16:9-41
+26        android:supportsRtl="true"
+26-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:18:9-35
+27        android:theme="@style/AppTheme" >
+27-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:17:9-40
+28
+29        <!-- 主界面 -->
+30        <activity
+30-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:22:9-31:20
+31            android:name="com.redpacket.autograb.ui.MainActivity"
+31-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:23:13-44
+32            android:exported="true"
+32-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:24:13-36
+33            android:launchMode="singleTask"
+33-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:25:13-44
+34            android:screenOrientation="portrait" >
+34-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:26:13-49
+35            <intent-filter>
+35-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:27:13-30:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:28:17-69
+36-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:28:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:29:17-77
+38-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:29:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <!-- 通知监听服务 -->
+43        <service
+43-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:34:9-42:19
+44            android:name="com.redpacket.autograb.service.RedPacketNotificationListener"
+44-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:35:13-66
+45            android:exported="true"
+45-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:36:13-36
+46            android:foregroundServiceType="dataSync"
+46-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:38:13-53
+47            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+47-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:37:13-87
+48            <intent-filter>
+48-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:39:13-41:29
+49                <action android:name="android.service.notification.NotificationListenerService" />
+49-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:40:17-99
+49-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:40:25-96
+50            </intent-filter>
+51        </service>
+52
+53        <!-- 无障碍服务 -->
+54        <service
+54-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:45:9-56:19
+55            android:name="com.redpacket.autograb.service.RedPacketAccessibilityService"
+55-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:46:13-66
+56            android:exported="true"
+56-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:47:13-36
+57            android:foregroundServiceType="dataSync"
+57-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:49:13-53
+58            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+58-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:48:13-79
+59            <intent-filter>
+59-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:50:13-52:29
+60                <action android:name="android.service.accessibility.AccessibilityService" />
+60-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:51:17-93
+60-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:51:25-90
+61            </intent-filter>
+62
+63            <meta-data
+63-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:53:13-55:64
+64                android:name="android.accessibilityservice"
+64-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:54:17-60
+65                android:resource="@xml/accessibility_config" />
+65-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:55:17-61
+66        </service>
+67
+68        <!-- 开机自启 -->
+69        <receiver
+69-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:59:9-67:20
+70            android:name="com.redpacket.autograb.service.BootReceiver"
+70-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:60:13-49
+71            android:enabled="true"
+71-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:62:13-35
+72            android:exported="true" >
+72-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:61:13-36
+73            <intent-filter>
+73-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:63:13-66:29
+74                <action android:name="android.intent.action.BOOT_COMPLETED" />
+74-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:64:17-79
+74-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:64:25-76
+75                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+75-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:65:17-82
+75-->/data/data/com.termux/files/home/redpacket/wechat-red-packet/app/src/main/AndroidManifest.xml:65:25-79
+76            </intent-filter>
+77        </receiver>
+78
+79        <provider
+79-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/e5dbba497e9735fd2457b7688f6820f2/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+80            android:name="androidx.startup.InitializationProvider"
+80-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/e5dbba497e9735fd2457b7688f6820f2/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+81            android:authorities="com.redpacket.autograb.androidx-startup"
+81-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/e5dbba497e9735fd2457b7688f6820f2/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+82            android:exported="false" >
+82-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/e5dbba497e9735fd2457b7688f6820f2/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+83            <meta-data
+83-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/e5dbba497e9735fd2457b7688f6820f2/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+84                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+84-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/e5dbba497e9735fd2457b7688f6820f2/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+85                android:value="androidx.startup" />
+85-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/e5dbba497e9735fd2457b7688f6820f2/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+86            <meta-data
+86-->[androidx.lifecycle:lifecycle-process:2.4.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/b025636e35225827709d0fef8e0c2ac8/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+87                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+87-->[androidx.lifecycle:lifecycle-process:2.4.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/b025636e35225827709d0fef8e0c2ac8/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+88                android:value="androidx.startup" />
+88-->[androidx.lifecycle:lifecycle-process:2.4.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/b025636e35225827709d0fef8e0c2ac8/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+89        </provider>
+90    </application>
+91
+92</manifest>

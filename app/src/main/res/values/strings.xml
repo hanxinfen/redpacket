@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">红包助手 Pro</string>
+    <string name="accessibility_desc">自动点击微信红包的"开"按钮，实现自动抢红包功能。支持 Android 12+。</string>
+</resources>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 拼手气红包数量（重点设置） -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎯 拼手气红包数量"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#E53935"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置最多抢几个拼手气红包"
+            android:textSize="12sp"
+            android:textColor="#999"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_lucky_minus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="−"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_lucky_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="#E53935"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_lucky_plus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="+"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekbar_lucky_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="50"
+            android:progress="5"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 总数量限制 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总抢红包数量限制"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_limit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/rb_no_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不限制"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rb_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="限制数量" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_max_count"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="输入最大数量（0=不限）"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:enabled="false" />
+
+        <!-- 延迟设置 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抢红包延迟（毫秒）"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_delay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="0 = 无延迟（立即抢）"
+            android:inputType="number"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 抢红包类型 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抢红包类型"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rb_all_types"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所有红包"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rb_lucky_only"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="只抢拼手气红包" />
+        </RadioGroup>
+
+        <!-- 白名单群聊 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="白名单群聊（逗号分隔，空=全部）"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_whitelist"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="例如: 群聊A,群聊B\n留空表示所有群都抢"
+            android:inputType="textMultiLine"
+            android:gravity="top" />
+
+    </LinearLayout>
+</ScrollView>
