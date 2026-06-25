@@ -277,7 +277,7 @@ public class RedPacketAccessibilityService extends AccessibilityService {
      */
     private boolean findAndClickByDesc(AccessibilityNodeInfo root) {
         try {
-            List<AccessibilityNodeInfo> nodes = root.findAccessibilityNodeInfosByViewDescription("开");
+            List<AccessibilityNodeInfo> nodes = root.findAccessibilityNodeInfosByText("开");
             if (nodes != null && !nodes.isEmpty()) {
                 for (AccessibilityNodeInfo node : nodes) {
                     if (isWeChatNode(node) && isClickable(node)) {

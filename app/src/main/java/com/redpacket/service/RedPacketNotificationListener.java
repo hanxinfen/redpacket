@@ -92,7 +92,7 @@ public class RedPacketNotificationListener extends NotificationListenerService {
         if (RedPacketDetector.isRedPacketNotification(sbn)) {
             String source = RedPacketDetector.getRedPacketSource(sbn);
             boolean isLucky = RedPacketDetector.isLuckyRedPacket(sbn);
-            float amount = RedPacketDetector.extractAmount(sbn);
+            // float amount = RedPacketDetector.extractAmount(sbn);
 
             // 白名单过滤
             if (!RedPacketConfig.isGroupWhitelisted(source)) {
@@ -198,3 +198,11 @@ public class RedPacketNotificationListener extends NotificationListenerService {
         public StatusBarNotification notification;
     }
 }
+
+    public static boolean isEnabled(android.content.Context context) {
+        String packageName = context.getPackageName();
+        java.util.Set<String> enabledListeners = 
+            android.service.notification.NotificationManagerCompat
+                .getEnabledListenerPackages(context);
+        return enabledListeners != null && enabledListeners.contains(packageName);
+    }
