@@ -86,9 +86,9 @@ public class MainActivity extends AppCompatActivity {
         tvGrabCount = findViewById(R.id.tv_grab_count);
         tvLastGrab = findViewById(R.id.tv_last_grab);
         tvLog = findViewById(R.id.tv_log);
-        btnNotifAccess = findViewById(R.id.btn_notification);
-        btnAccessSettings = findViewById(R.id.btn_accessibility);
-        btnSettings = findViewById(R.id.btn_settings);
+        btnNotifAccess = findViewById(R.id.btn_notif);
+        btnAccessSettings = findViewById(R.id.btn_access);
+        btnSettings = findViewById(R.id.btn_setting);
         switchAutoGrab = findViewById(R.id.switch_auto_grab);
         svLog = findViewById(R.id.sv_log);
 
